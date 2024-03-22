@@ -14,12 +14,6 @@ class Character(ABC):
         """Docstring for method die of class Character"""
         self.is_alive = False
 
-    #def __str__(self):
-    #    return f"Vector({self.family_name}, {self.eyes}, {self.hairs})"
-
-    #def __repr__(self):
-    #    return self.__str__()
-
 
 class Stark(Character):
     """Docstring for class Stark"""
