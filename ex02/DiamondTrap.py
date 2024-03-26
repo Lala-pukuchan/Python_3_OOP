@@ -5,6 +5,7 @@ class King(Baratheon, Lannister):
     """
     King class
     """
+
     def __init__(self, name):
         super().__init__(name)
 
@@ -19,3 +20,13 @@ class King(Baratheon, Lannister):
 
     def get_hairs(self):
         return self.hairs
+
+
+def main():
+    Joffrey = King("Joffrey")
+    print(Joffrey.__dict__)
+    Joffrey.set_eyes("blue")
+
+
+if __name__ == "__main__":
+    main()

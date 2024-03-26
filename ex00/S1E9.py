@@ -21,3 +21,13 @@ class Stark(Character):
     def __init__(self, first_name, is_alive=True):
         """Docstring for Constructor of class Stark"""
         super().__init__(first_name, is_alive)
+
+
+def main():
+    Ned = Stark("Ned")
+    print(Ned.__dict__)
+    print(Ned.is_alive)
+
+
+if __name__ == "__main__":
+    main()

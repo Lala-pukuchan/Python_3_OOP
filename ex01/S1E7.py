@@ -3,6 +3,7 @@ from S1E9 import Character
 
 class Baratheon(Character):
     """Representing the Baratheon family."""
+
     def __init__(
         self,
         first_name,
@@ -26,6 +27,7 @@ class Baratheon(Character):
 
 class Lannister(Character):
     """Representing the Lannister family."""
+
     def __init__(
         self,
         first_name,
@@ -52,3 +54,15 @@ class Lannister(Character):
         instance = cls(first_name, True)
         instance.is_alive = is_alive
         return instance
+
+
+def main():
+    Robert = Baratheon("Robert")
+    print(Robert.__dict__)
+    print(Robert.__str__)
+    print(Robert.__repr__)
+    print(Robert.is_alive)
+
+
+if __name__ == "__main__":
+    main()
